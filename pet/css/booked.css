@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+
+.booking{
+	all: initial;
+	position: fixed; 
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.booking-mid{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(230, 230, 230, 0.7);
+	width: 100vw;
+	height: 180px;
+}
+
+.booking-up{
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lemonada', cursive;
+	font-size: 20px;
+    width: 70%;
+    height: 10vh;
+    background-color: rgb(180, 150, 150);
+    color: rgb(255, 0, 0);
+}
+
+.booking-down{
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lemonada', cursive;
+	font-size: 20px;
+    width: 20%;
+    height: 5vh;
+    background-color: rgb(180, 218, 242, 0.7); 
+    color: #0f2862;
+    font-weight: bold;
+}
+
+.booking-down:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#send-in-date{
+	position: relative;
+	height: 100%;
+	width: 30%;
+	margin: 8vw;
+	display: inline;
+}
+
+#pick-up-date{
+	position: relative;
+	height: 100%;
+	width: 30%;
+	margin: 8vw;
+	display: inline;
+}
+
+.inbox-title{
+	margin: 20px;
+	font-size: 30px;
+}
+
+.otminput{
+	font-family: 'Lemonada', cursive;
+	width: 80%;
+	height: 30px;
+	font-size: 30px;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.input-left{
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+  border-
+  position: relative;
+  height: 100%;
+  width: 33vw;
+  background-color: #96ceb4;
+  color: #fff; 
+}
+
+.input-mid{
+  position: relative;
+  height: 100%;
+  width: 33vw;
+  background-color: #ffeead;
+  color: #000;
+}
+
+.input-right{
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  position: relative;
+  height: 100%;
+  width: 33vw;
+  background-color: #ffcc5c;
+  color: #fff;
+}
+
+.input-left, 
+.input-mid, 
+.input-right{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 3em;
+}
+
+.input-left:hover,  
+.input-mid:hover, 
+.input-right:hover{
+  opacity: 0.5; 
+  transform: scale(1.2);
+  transition: all 2s;
+  z-index: 100;
+  cursor: pointer;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

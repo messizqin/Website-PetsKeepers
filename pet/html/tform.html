@@ -1,0 +1,27 @@
+<form id='password-reset-form' action="#0" method='POST'>
+
+  <div id='tform-alert' class='alert alert-danger alert-dismissible' role='alert'>
+    <button id='tform-dismiss' type='button' class='close' data-dismiss='alert' aria-label='Close'>x</button>
+    <div class='tform-result'>Tfrom Errors</div>
+  </div>
+  
+  <div>
+    <input class='tform-input' type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+    <label for="password">Password</label>
+    <div class="requirements">
+      Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+    </div>
+  </div>
+
+  <div>
+    <input class='tform-input' type="password" id="confirm-password" name="confirm-password" required placeholder=" " />
+    <label for="confirm password">Confirm Password</label>
+    <div class="requirements">
+      Passwords do not match
+    </div>
+  </div>
+  
+  <button id='reset-btn'>Reset Password</button>
+</form>
+
+

@@ -1,0 +1,14 @@
+#rform-alert,
+#sform-alert,
+#eform-alert{
+	display: none;
+}
+
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 10000;
+	opacity: 0.6;
+	display: none;
+}

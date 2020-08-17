@@ -1,0 +1,59 @@
+<form id='register-form' action="#0" method='POST'>
+
+  <div id='rform-alert' class='alert alert-danger alert-dismissible' role='alert'>
+    <button id='rform-dismiss' type='button' class='close' data-dismiss='alert' aria-label='Close'>x</button>
+    <div class='rform-result'>Rfrom Errors</div>
+  </div>
+
+  <div>
+    <input class='rform-input' type="text" id="first_name" name="first_name" required placeholder=" " />
+    <label for="first_name">First Name</label>
+  </div>
+  
+  <div>
+    <input class='rform-input' type="text" id="last_name" name="last_name" required placeholder=" " />
+    <label for="last_name">Last Name</label>
+  </div>
+  
+  <div>
+    <input class='rform-input' type="email" id="email" name="email" required placeholder=" " />
+    <label for="email">Email Address</label>
+    <div class="requirements">
+      Must be a valid email address.
+    </div>
+  </div>
+  
+  <div>
+    <input class='rform-input' type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+    <label for="password">Password</label>
+    <div class="requirements">
+      Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+    </div>
+  </div>
+
+  <div>
+    <input class='rform-input' type="password" id="confirm-password" name="confirm-password" required placeholder=" " />
+    <label for="confirm password">Confirm Password</label>
+    <div class="requirements">
+      Passwords do not match
+    </div>
+  </div>
+
+  <div>
+    <input class='rform-input' type="text" id="phone" name="phone" required placeholder=" " pattern="^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})" />
+    <label for="last_name">Phone number</label>
+    <div class="requirements">
+		Please enter an Australia phone number. 
+    </div>
+  </div>
+  
+  <button id='register-btn'>Sign Up</button>
+</form>
+
+<div class='noname'>
+  <small class='regulate'>
+    Already have an account?
+    <a class='inreg' onclick='to_signin()'>Sign In</a>
+  </small>
+</div>
+

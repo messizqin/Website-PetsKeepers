@@ -1,0 +1,124 @@
+table.scroll{
+    border-spacing: 0;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+table.scroll tbody td,
+table.scroll thead th {
+    border-right: 1px solid black;
+}
+
+table.scroll thead th:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+table.scroll tbody { border-top: 2px solid black; }
+
+table.scroll tbody td:last-child, thead th:last-child {
+    border-right: none !important;
+}
+
+#goback{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
+    z-index: 1000;
+}
+
+.conduct{
+    z-index: 100;
+}
+
+.otminput{
+    width: 24vw;
+    border-radius: 6px;
+    border: 1px solid #d0d0d0;
+    outline: 0;
+    font-family: Roboto;
+    padding: 15px 10px; 
+    font-size: 15px;
+    webkit-user-select: auto;
+}
+
+#admin-w{
+    position: fixed;
+    top: 0;
+}
+
+.wform-display{
+    display: hidden;
+    z-index: -100;
+}
+
+#wform-dismiss{
+    margin: 10px;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: rgb(230, 200, 200);
+    color: red;
+}
+
+#wform-dismiss:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#delete-confirm{
+    position: fixed;
+    top: 0;
+    height: 20vh;
+    width: 100vw;
+    z-index: 1001;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#delete-alert{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#delete-cancel{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#delete-notshow{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+#delete-proceed{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#btn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.alert-display{
+    display: none;
+}

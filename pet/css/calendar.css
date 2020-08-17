@@ -1,0 +1,51 @@
+.calcon{
+	position: fixed;
+	display: block;
+	top: 20vh;
+	left: 30vw;
+}
+
+.cal{
+	position: fixed;
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 25px;
+	padding: 25px;
+	margin: 25px;
+}
+
+.sin{
+	display: inline-block;
+	position: relative;
+	height: 60px;
+	width: 60px;
+	border: 2px solid;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.av{
+	border-color: cyan;
+	color: #00bfd5;
+	font-size: 40px;
+}
+
+.ex{
+	border-color: magenta;
+	color: #fc4f30;
+	font-size: 40px;
+}
+
+.av:hover{
+	background-color: #00bfd5;
+	color: #fff;
+}
+
+.ex:hover{
+	background-color: #fc4f30;
+	color: #fff;
+}

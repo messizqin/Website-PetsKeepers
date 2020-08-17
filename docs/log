@@ -1,0 +1,51 @@
+01-06-2020: (BUILD) sticky navigation bar
+02-06-2020: (DEBUG) nav bar content justify
+03-06-2020: (DEBUG) nav bar window resize 
+04-06-2020: (BUILD) image slider
+05-06-2020: (BUILD) gmail two step verification
+06-06-2020: (INTEGRATE) image slider and hidden nav bar
+07-06-2020: (BUILD) mail autoload credentials
+09-06-2020: (DEBUG) scroll freeze 
+11-06-2020: (BUILD) image slider css move effect
+15-06-2020: (BUILD) image slider css blur effect
+16-07-2020: (DEBUG) browser extension 
+17-07-2020: (DEBUG) added margin
+19-07-2020: (BUILD) calendar cells in css and hover effect
+19-07-2020: (DEBUG) excess boundary due to relative heights and widths
+20-07-2020: (BUILD) date generator 
+21-07-2020: (INTEGRATE) about page and home page
+22-07-2020: (DEBUG) scroll inconsistencies
+23-06-2020: (DEBUG) overflow position calculation
+24-06-2020: (RESTRUCTURE) multiple url to one url
+25-06-2020: (BUILD) divide home page into three sections
+27-06-2020: (BUILD) section fade in out effect
+29-06-2020: (DEBUG) zindex relative position 
+02-07-2020: (BUILD) image slider terminate animation
+03-07-2020: (DEBUG) animation sequence
+10-07-2020: (INTEGRATE) enable url a href
+11-07-2020: (DEBUG) display position z-index and overflow
+12-07-2020: (BUILD) home page
+13-07-2020: (DEBUG) display overflow
+14-07-2020: (DEBUG) deactivate browser added extension 
+15-07-2020: (DEBUG) added margin issue
+19-07-2020: (BUILD) home page textarea 
+20-07-2020: (BUILD) inverse path module
+21-07-2020: (BUILD) registration form
+22-07-2020: (DEBUG) overflow hidden
+23-07-2020: (BUILD) login form
+24-07-2020: (INTEGRATE) login registration to services
+25-07-2020: (BUILD) form validation 
+26-07-2020: (BUILD) users class
+27-07-2020: (BUILD) foreign key one to many 
+28-07-2020: (BUILD) dates and pets classes
+29-07-2020: (BUILD) embed google map
+30-07-2020: (BUILD) home page scroll effect
+31-07-2020: (BUILD) svg path animation
+01-08-2020: (BUILD) authentication front-end
+02-08-2020: (DEBUG) home services js variable conflict 
+03-08-2020: (DEBUG) slide show whitespace keypress conflict
+03-08-2020: (BUILD) datedropper
+04-08-2020: (BUILD) booking form
+05-08-2020: (DEBUG) display flex align content
+06-08-2020: (BUILD) ajax request authentication
+07-08-2020: (RESTRUCTURE) services logic 

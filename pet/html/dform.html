@@ -1,0 +1,21 @@
+<form id='booking-d' class='booking' method='POST'>
+	<div id='dform-error' class='booking-up'></div>
+	<div class='booking-mid'>
+		<div id='send-in-date'>
+			<div class='inbox-title'>Send in Date</div>
+			<input id="sendin-input" name='sendin' class='otminput' type="text" />
+			<script>
+				$('#sendin-input').dateDropper();
+			</script> 
+		</div>
+		<div id='pick-up-date'>
+			<div class='inbox-title'>Pick Up Date</div>
+			<input id="pickup-input" name='pickup' class='otminput' type="text" date-dd-theme='leaf' />
+			<script>
+				$('#pickup-input').dateDropper({theme:'leaf'});
+			</script> 
+		</div>
+	</div>
+	<input type='hidden' name='startdate' id='todayDate' />
+	<div id='booking-d-submit' class='booking-down'>Submit</div>
+</form>

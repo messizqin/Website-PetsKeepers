@@ -1,0 +1,35 @@
+<form id='signin-form' action="#0" method='POST'>  
+
+  <div id='sform-alert' class='alert alert-danger alert-dismissible' role='alert'>
+    <button id='sform-dismiss' type='button' class='close' data-dismiss='alert' aria-label='Close'>x</button>
+    <div class='sform-result'>Sform Errors</div>
+  </div>
+
+  <div>
+    <input class='sform-input' type="email" id="sform-email" name="email" required placeholder=" " />
+    <label for="email">Email Address</label>
+    <div class="requirements">
+      Must be a valid email address.
+    </div>
+  </div>
+  
+  <div>
+    <input class='sform-input' type="password" id="sform-password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+    <label for="password">Password</label>
+  </div>
+  
+  <button id='login-btn'>Sign In</button>
+</form>
+
+<div class='noname'>
+  <small class='regulate'>
+    Need an account?
+    <a class='inreg' onclick='to_signup()'>Sign Up</a>
+  </small>
+</div>
+<div class='noname'>
+  <small class='regulate'>
+    Forget your password?
+    <a class='inreg' onclick='to_password_reset()'>Reset</a>
+  </small>
+</div>

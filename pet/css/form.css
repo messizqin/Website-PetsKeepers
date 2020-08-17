@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+ form {
+ 	 position: relative;
+ 	 top: 20vh;
+	 max-width: 450px;
+	 margin: 0 auto;
+}
+ form > div {
+	 position: relative;
+	 background: white;
+	 border-bottom: 1px solid #ccc;
+}
+ form > div > label {
+	 opacity: 0.3;
+	 font-weight: bold;
+	 position: absolute;
+	 top: 22px;
+	 left: 20px;
+}
+ form > div > input[type="text"], 
+ form > div > input[type="email"], 
+ form > div > input[type="password"] {
+	 width: 80%;
+	 border: 0;
+	 padding: 20px 20px 20px 50px;
+	 background: #eee;
+}
+ form > div > input[type="text"]:focus, 
+ form > div > input[type="email"]:focus, 
+ form > div > input[type="password"]:focus {
+	 outline: 0;
+	 background: white;
+}
+ form > div > input[type="text"]:focus + label, 
+ form > div > input[type="email"]:focus + label, 
+ form > div > input[type="password"]:focus + label {
+	 opacity: 0;
+}
+ form > div > input[type="text"]:valid, 
+ form > div > input[type="email"]:valid, 
+ form > div > input[type="password"]:valid {
+	 background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+	 background-size: 20px;
+	 background-repeat: no-repeat;
+	 background-position: 20px 20px;
+}
+ form > div > input[type="text"]:valid + label, 
+ form > div > input[type="email"]:valid + label, 
+ form > div > input[type="password"]:valid + label {
+	 opacity: 0;
+}
+ form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown), 
+ form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown), 
+ form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+	 background: pink;
+}
+ form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label, 
+ form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label, 
+ form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+	 opacity: 0;
+}
+ form > div > input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements, 
+ form > div > input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements, 
+ form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+	 max-height: 200px;
+	 padding: 0 30px 20px 50px;
+}
+ form > div .requirements {
+	 padding: 0 30px 0 50px;
+	 color: #999;
+	 max-height: 0;
+	 transition: 0.28s;
+	 overflow: hidden;
+	 color: red;
+	 font-style: italic;
+}
+ form button{
+	 display: block;
+	 width: 100%;
+	 margin: 20px 0;
+	 background: #41d873;
+	 color: white;
+	 border: 0;
+	 padding: 20px;
+	 font-size: 1.2rem;
+	 cursor: pointer;
+ }
+ form button:hover{
+ 	opacity: 0.8;
+ }
+ .services {
+ 	 position: fixed;
+	 background: #333;
+	 width: 100%;
+	 height: 100%;
+	 font-family: 'PT Sans', sans-serif;
+	 padding: 20px;
+	 box-sizing: border-box;
+}
+ .noname {
+ 	 position: relative;
+ 	 display: flex;
+ 	 justify-content: center;
+ 	 top: 30vh;
+	 width: 450px;
+	 margin: 0 auto;
+}
+
+.regulate{
+	position: relative;
+	font-size: 20px;
+	color: cyan;
+}
+
+.inreg{
+	margin-left: 60px;
+	color: #add3e6;
+}
+
+.inreg:hover{
+	color: #3295a8;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+form button.close{
+	/* remove all inherited styles */
+	all: unset;
+}
