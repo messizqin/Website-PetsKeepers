@@ -25,9 +25,12 @@ if(!isset($_GET['token'])){
     die();
 }
 
+// setting timezone is extremely important, since server may have different location
+date_default_timezone_set("Australia/Melbourne");
+
 // decode url token to id, expiretime
 $data = json_decode(base64_decode($_GET['token']), true);
-$currentT = strtotime(date('d-m-Y h:i:s'));
+$currentT = strtotime(date('d-m-Y h:i:s A'));
 $expireT = strtotime($data['expTime']);
 if($currentT > $expireT){
 	echo "<h2>Link expired</h2>";
