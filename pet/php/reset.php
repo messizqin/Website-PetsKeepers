@@ -54,6 +54,9 @@ if($usr['token'] != $data['token']){
 
 // throw id, catch in password.php as an entry to update
 session_start();
+$sessdir = dirname(dirname(__FILE__)).'/session_dir';
+ini_set('session.save_path', $sessdir); 
+
 $_SESSION['id'] = $data['id'];
 
 ?>
