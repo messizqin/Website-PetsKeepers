@@ -176,45 +176,7 @@ password_reset_btn.addEventListener('click', e=>{
 	}).done(function(result){
 		$('#loader').hide();
 		var data = JSON.parse(result);
-		$('#eform-result').show();
-		if(data.status == 0){
-			$('#eform-result').html(data.msg);
-		}else{
-			$('#eform-result').html(data.msg);
-		}
+		$('#eform-alert').show();
+		$('.eform-result').html(data.msg);
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
