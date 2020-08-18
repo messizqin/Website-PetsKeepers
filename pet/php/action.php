@@ -109,8 +109,10 @@
 			$userData = $users_obj->getUserByEmail();
 			$data['id'] = $userData['id'];
 			$data['token'] = sha1($userData['email']);
+			// setting timezone is extremely important, since server may have different location
+			date_default_timezone_set("Australia/Melbourne");
 			// password reset link valid for two hours
-			$data['expTime'] = date('d-m-Y h:i:s', time() + (60*60*2));
+			$data['expTime'] = date('d-m-Y h:i:s A', time() + (60*60*2));
 			$urlToken = base64_encode(json_encode($data));
 			$users_obj->setId($userData['id']);
 			$users_obj->setToken($data['token']);
