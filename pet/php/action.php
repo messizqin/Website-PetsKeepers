@@ -81,8 +81,9 @@
 					if($userData['admin'] == 1){
 						require_once('../php/inverse.php');
 						session_start();
+						$sessdir = dirname(dirname(__FILE__)).'/session_dir';
+						ini_set('session.save_path', $sessdir); 
 						$_SESSION['redirect'] = true;
-						// header('Location: ../php/admin.php');
 						echo json_encode(['status' => 1, 'msg' => 'redirect', 'path' => Inverse::root() . '/php/admin.php']);
 					}else{
 						setcookie('PetKeepersemail', $objUser->getEmail());
@@ -156,4 +157,3 @@
 		}
 	}
 ?>
-
