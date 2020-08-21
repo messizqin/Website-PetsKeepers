@@ -16,12 +16,13 @@ to archive delete and edit: delete is pretty easy, I only need to write a confir
 there is no tags in html page that I can access from button line javascript, since most of my contents are temporarily generated from parser. therefore, I need to write eventlistener scripts in string format and add them to the parser immediately after the code is injected.
 */
 
+require_once('../php/sess.php');
+
 // url direct access deny
+$session_handler = new Sess();
 session_start();
 
-if(isset($_SESSION['retry']) && $_SESSION['retry'] == true){
-	$_SESSION['retry'] = false; 
-}else{
+if(isset($_SESSION) && $_SESSION['admin']['retry'] == 1){}else{
 	require_once('../php/inverse.php');
 	echo "<h2>403 Forbidden</h2>";
 	echo "<p>Sorry, this page cannot be accessed directly from url</p>";
