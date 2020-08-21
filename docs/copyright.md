@@ -27,6 +27,12 @@ Christ Coyier
 <h4>Project</h4><a href='https://github.com/durgesh-sahani/user-registration-php-mysql-ajax'>
 user-registration-php-mysql-ajax
 </a><h4>Author</h4>
+Kahwee Teng
+<hr />
+
+<h4>Project</h4><a href='https://github.com/kahwee/php-db-session-handler'>
+php-db-session-handler
+</a><h4>Author</h4>
 durgesh-sahani
 <hr />
 
