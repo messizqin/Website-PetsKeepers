@@ -1,12 +1,4 @@
 <?php
-/*
-AUTHOR: Messiz Qin
-GITHUB: https://github.com/Weilory
-PROJECT: PetsKeepers
-*/
-
-// ajax action
-
 	require_once('../php/db_connect.php');
 	require_once('../php/users.php');
 	require_once('../php/PHPMailerAutoload.php');
@@ -91,12 +83,11 @@ PROJECT: PetsKeepers
 						// this part is called by jQuery.ajax in services.js.php
 						// following code will be only executed if the user is verified as an administer. 
 						// in order to to prevent direct url access by non admin user, I set the session here as the user is verified. 
-						// in corresponding, in admin.php, if there is no session set, display an forbidden error;  
+						// in corresponding, in admin.php, if there is no session set, display an forbidden error; 
 						$session_handler = new Sess();
 						session_start();
 						$_SESSION['admin'] = array('redirect' => 1);
-						// return an absolute url to services.js.php, for redirecting. 
-						echo json_encode(['status' => 1, 'msg' => 'redirect', 'path' => Inverse::root() . '/php/admin.php']);
+						echo json_encode(['status' => 1, 'msg' => 'redirect']);
 					}else{
 						setcookie('PetKeepersemail', $objUser->getEmail());
 						setcookie('PetKeeperspassword', base64_encode(dequote(json_encode($_POST['password']))));
