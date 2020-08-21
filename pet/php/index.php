@@ -233,8 +233,7 @@ echo "</div>";
 
 <!-- project javascript: page interaction -->
 <script src='../js/intro.js'></script>
-<!-- <script src='../js/services.js'></script> -->
-<?php include_once('../php/services.js.php'); ?>
+<script src='../js/services.js'></script>
 <script src='../js/booked.js'></script>
 <script src='../js/home.js'></script>
 <script src='../js/nav.js'></script>
