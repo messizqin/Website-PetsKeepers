@@ -144,7 +144,7 @@ login_btn.addEventListener('click', e=>{
 			}else{
 				// if administer, redirect and quit
 				if(data.msg == 'redirect'){
-					window.location.href = data.path;
+					window.location.replace('../php/admin.php');
 				}else{
 					$('#btn-placeholder').html('<button id="bookingbtn" type="button" class="btn btn-outline-success btn-lg" onclick="bookingbtn_click();" >Add Booking</button>')
 					// assigning user id to global javascript variable
