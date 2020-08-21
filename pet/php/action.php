@@ -1,9 +1,18 @@
 <?php
+/*
+AUTHOR: Messiz Qin
+GITHUB: https://github.com/Weilory
+PROJECT: PetsKeepers
+*/
+
+// ajax action
+
 	require_once('../php/db_connect.php');
 	require_once('../php/users.php');
 	require_once('../php/PHPMailerAutoload.php');
 	require_once('../php/credential.php');
 	require_once('../php/inverse.php');
+	require_once('../php/sess.php');
 
 	if(isset($_POST['action']) && $_POST['action'] == 'checkCookie'){
 		if(isset($_COOKIE['PetKeepersemail'], $_COOKIE['PetKeeperspassword'])){
@@ -79,11 +88,14 @@
 			if($userData['password'] == $objUser->getPassword()){
 				if($userData['activated'] == 1){
 					if($userData['admin'] == 1){
-						require_once('../php/inverse.php');
+						// this part is called by jQuery.ajax in services.js.php
+						// following code will be only executed if the user is verified as an administer. 
+						// in order to to prevent direct url access by non admin user, I set the session here as the user is verified. 
+						// in corresponding, in admin.php, if there is no session set, display an forbidden error;  
+						$session_handler = new Sess();
 						session_start();
-						$sessdir = dirname(dirname(__FILE__)).'/session_dir';
-						ini_set('session.save_path', $sessdir); 
-						$_SESSION['redirect'] = true;
+						$_SESSION['admin'] = array('redirect' => 1);
+						// return an absolute url to services.js.php, for redirecting. 
 						echo json_encode(['status' => 1, 'msg' => 'redirect', 'path' => Inverse::root() . '/php/admin.php']);
 					}else{
 						setcookie('PetKeepersemail', $objUser->getEmail());
