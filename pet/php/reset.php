@@ -15,6 +15,7 @@ secured by following:
 
 require_once('../php/users.php');
 require_once('../php/inverse.php');
+require_once('../php/sess.php');
 
 // ajax reach-able only
 if(!isset($_GET['token'])){
@@ -53,12 +54,9 @@ if($usr['token'] != $data['token']){
 }
 
 // throw id, catch in password.php as an entry to update
+$session_handler = new Sess();
 session_start();
-$sessdir = dirname(dirname(__FILE__)).'/session_dir';
-ini_set('session.save_path', $sessdir); 
-
-$_SESSION['id'] = $data['id'];
-
+$_SESSION['pass'] = array('id' => $data['id']);
 ?>
 
 <!DOCTYPE html>
