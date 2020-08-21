@@ -11,15 +11,15 @@ administer access only
 */
 
 require_once('../php/inverse.php');
+require_once('../php/sess.php');
+
+$session_handler = new Sess();
+session_start();
 
 // url direct access deny
-session_start();
-$sessdir = dirname(dirname(__FILE__)).'/session_dir';
-ini_set('session.save_path', $sessdir); 
-
-if(isset($_SESSION['redirect']) && $_SESSION['redirect'] == true){
-	$_SESSION['redirect'] = false; 
-	$_SESSION['retry'] = true;
+if(isset($_SESSION) && $_SESSION['admin']['redirect'] == 1){
+	$_SESSION['admin']['retry'] = 1;
+	unset($_SESSION['admin']['redirect']);
 }else{
 	echo "<h2>403 Forbidden</h2>";
 	echo "<p>Sorry, this page cannot be accessed directly from url</p>";
