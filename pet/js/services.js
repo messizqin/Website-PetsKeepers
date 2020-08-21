@@ -134,6 +134,7 @@ login_btn.addEventListener('click', e=>{
 			url: '../php/action.php',
 			method: 'POST',
 			data: formData + "&action=login",
+			xhrFields: {withCredentials: true},
 		}).done(function(result){
 			$('#loader').hide();
 			var data = JSON.parse(result);
