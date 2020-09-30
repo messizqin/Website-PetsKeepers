@@ -43,7 +43,7 @@ function prelogo(lg){
 // show svg
 function logo(lg){
 	var fs = 0; 
-	for(let i=0; i<lp.length; i++){
+	for(let i=0; i<lg.length; i++){
 		var len = lg[i].getTotalLength(); 
 		lg[i].style.strokeDasharray = len;
 		lg[i].style.strokeDashoffset = len; 
